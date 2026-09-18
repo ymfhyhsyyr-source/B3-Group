@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>B3 | جدول المحاضرات الأسبوعية</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand"><span>B3</span><small>Group Hub</small></div>
+  <nav><a class="active" href="#home">الرئيسية</a><a href="#schedule">الجدول</a><a href="#subjects">المواد</a><a href="#weeks">أرشيف الأسابيع</a></nav>
+</header>
+
+<main id="home">
+<section class="hero">
+  <div>
+    <p class="eyebrow">B3 • STUDENT HUB</p>
+    <h1>جدول ومحاضرات گروب <span>B3</span> بمكان واحد.</h1>
+    <p class="muted">جدول المحاضرات، المواد، وما أخذناه أسبوعيًا — مرتب وسهل الوصول من الموبايل.</p>
+    <a class="btn" href="#schedule">شوف الجدول ↓</a>
+  </div>
+  <div class="hero-card">
+    <div class="mini-label">هذا الأسبوع</div>
+    <div class="big">B3</div>
+    <div class="mini-label">آخر تحديث</div>
+    <div id="lastUpdate">اليوم</div>
+  </div>
+</section>
+
+<section id="schedule" class="section">
+  <div class="section-head"><div><p class="eyebrow">WEEKLY</p><h2>جدول هذا الأسبوع</h2></div><button class="ghost" onclick="window.print()">طباعة الجدول</button></div>
+  <div class="table-wrap">
+  <table><thead><tr><th>اليوم</th><th>الوقت</th><th>المادة</th><th>الدكتور</th><th>النوع</th></tr></thead>
+  <tbody id="scheduleBody"></tbody></table>
+  </div>
+</section>
+
+<section id="subjects" class="section">
+  <div class="section-head"><div><p class="eyebrow">SUBJECTS</p><h2>المواد</h2></div></div>
+  <div class="cards" id="subjectCards"></div>
+</section>
+
+<section id="weeks" class="section">
+  <div class="section-head"><div><p class="eyebrow">ARCHIVE</p><h2>شنو أخذنا هذا الأسبوع؟</h2></div></div>
+  <div class="week-selector">
+    <button class="week active" data-week="1">الأسبوع 1</button>
+    <button class="week" data-week="2">الأسبوع 2</button>
+    <button class="week" data-week="3">الأسبوع 3</button>
+  </div>
+  <div id="weekContent" class="week-content"></div>
+</section>
+</main>
+
+<footer>B3 Group Hub • نسخة أولية قابلة للتعديل</footer>
+<script src="script.js"></script>
+</body>
+</html>
